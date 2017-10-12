@@ -1,0 +1,3 @@
+LEDS	KEYWORD1
+setRedLevel	KEYWORD2
+setGreenLevel	KEYWORD2
