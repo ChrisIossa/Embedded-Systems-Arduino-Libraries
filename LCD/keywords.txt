@@ -1,0 +1,6 @@
+LCD	KEYWORD1
+initalize	KEYWORD2
+writeFourBits	KEYWORD2
+sendByte  KEYWORD2
+sendChar  KEYWORD2
+writeStr  KEYWORD2
