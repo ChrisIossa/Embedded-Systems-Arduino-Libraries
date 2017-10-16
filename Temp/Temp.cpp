@@ -71,7 +71,7 @@ boolean Temp::readDHT(float * temp, float *humid)
   else
   {
    *humid = (float) highHumid;
-   *temp = (float) highTemp;
+   *temp = (float) (highTemp*1.8+32); ;
   }
 }
 
