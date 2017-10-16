@@ -12,7 +12,7 @@ class LCD
 public:
 
   //constructor
-  LCD(EpinIn, RSpinIn, D4PinIn, D5PinIn, D6PinIn, D7PinIn);
+  LCD(int EpinIn,int RSpinIn,int D4PinIn,int D5PinIn,int D6PinIn,int D7PinIn);
 
   //public methods
   void initalize();
@@ -22,7 +22,12 @@ public:
   void writeStr(char* str);
 
 private:
-  int Epin, RSpin, D4Pin, D5Pin, D6Pin, D7Pin;
+  int Epin;
+  int RSpin;
+  int D4Pin;
+  int D5Pin;
+  int D6Pin;
+  int D7Pin;
 
 };
 

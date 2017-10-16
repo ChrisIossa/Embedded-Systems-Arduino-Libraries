@@ -1,4 +1,4 @@
-#include "LCD.h";
+#include "LCD.h"
 
 LCD::LCD(EpinIn, RSpinIn, D4PinIn, D5PinIn, D6PinIn, D7PinIn)
 {

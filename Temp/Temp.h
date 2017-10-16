@@ -11,7 +11,7 @@ class Temp
 {
 public:
   //constructor
-  Temp(int D2PinIn,);
+  Temp(int D2PinIn);
 
   //public methods
   int readState (boolean val);
