@@ -1,11 +1,27 @@
 #include "LCD.h"
 
-LCD::LCD(EpinIn, RSpinIn, D4PinIn, D5PinIn, D6PinIn, D7PinIn)
+LCD::LCD(int EpinIn,int RSpinIn,int D4PinIn,int D5PinIn,int D6PinIn,int D7PinIn)
 {
   for (int i=7;i<=12;i++)
   {
     pinMode(i,OUTPUT);
-  }
+  }  
+  Epin=EpinIn;
+  RSpin=RSpinIn;
+  D4pin=D4PinIn;
+  D5pin=D5PinIn;
+  D6pin=D6PinIn;
+  D7pin=D7PinIn;
+  dataPins[0]=D4pin;
+  dataPins[1]=D5pin;
+  dataPins[2]=D6pin;
+  dataPins[3]=D7pin;
+  
+}
+
+void LCD::startScreen()
+{
+
   digitalWrite(Epin, LOW);
   digitalWrite(RSpin, LOW);
   initalize();

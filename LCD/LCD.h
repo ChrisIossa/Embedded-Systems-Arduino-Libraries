@@ -20,14 +20,15 @@ public:
   void sendByte(byte val);
   void sendChar(byte val);
   void writeStr(char* str);
-
+  void startScreen();
 private:
   int Epin;
   int RSpin;
-  int D4Pin;
-  int D5Pin;
-  int D6Pin;
-  int D7Pin;
+  int D4pin;
+  int D5pin;
+  int D6pin;
+  int D7pin;
+  int dataPins[4];
 
 };
 
