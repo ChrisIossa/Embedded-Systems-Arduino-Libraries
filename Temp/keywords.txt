@@ -1,0 +1,4 @@
+Temp	KEYWORD1
+readState	KEYWORD2
+readDHT	KEYWORD2
+reassembleByte  KEYWORD2
