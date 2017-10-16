@@ -29,7 +29,7 @@ int Temp::readState(boolean val)
   }
 }
 
-boolean readDHT(float * temp, float *humid)
+boolean Temp::readDHT(float * temp, float *humid)
 {
   int readArr[80];
 
@@ -75,7 +75,7 @@ boolean readDHT(float * temp, float *humid)
   }
 }
 
-byte reassembleByte(int* arrayIn, int iStart)
+byte Temp::reassembleByte(int* arrayIn, int iStart)
 {
   byte value=0;
   for(int i = iStart; i<(iStart+8); i++)

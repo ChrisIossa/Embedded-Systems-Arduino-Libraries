@@ -60,7 +60,7 @@ void LCD::sendChar(byte val)
   writeFourBits(val);
 }
 
-void writeStr(char* str)
+void LCD::writeStr(char* str)
 {
   while (*str)
   {
